@@ -1,0 +1,21 @@
+version: '3'
+services:
+  hubot:
+    container_name: hubot
+    build:
+      context: .
+
+    volumes:
+      - ./docker-entrypoint.d:/docker-entrypoint.d
+      - ./app/scripts:/home/hubot/app/tmp_scripts
+
+    env_file:
+      - .env
+
+    ports:
+      - 8080:8080
+
+    stdin_open: true
+    tty: true
+
+    restart: always
