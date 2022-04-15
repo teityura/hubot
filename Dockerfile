@@ -1,7 +1,7 @@
 FROM node:17.8.0-bullseye
 
 RUN set -x && apt-get update \
-  && apt-get install -y vim sudo \
+  && apt-get install -y python3-pip vim sudo \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/* \
   && npm install -g yo generator-hubot
