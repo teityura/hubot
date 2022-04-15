@@ -10,7 +10,7 @@ cd / ; ls -al
 
 ls -al ./docker-entrypoint.d/
 
-find ./docker-entrypoint.d/ -type f | bash
+find ./docker-entrypoint.d/ -type f | sort | bash
 
 exec "$@"
 
