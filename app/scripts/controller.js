@@ -6,6 +6,7 @@ var orderList = [
   ['weather', 'echo "https://wttr.in/Osaka?lang=ja"', '引数なし, 天気予報'],
   ['hello-sh', 'scripts/shell/hello.sh', '引数なし, shellscriptの動作確認'],
   ['hello-py', 'scripts/python/hello.py', '引数なし, pythonの動作確認'],
+  ['coin', 'scripts/python/coin-rate.py', '引数あり, coin ETH XRP'],
 ];
 
 module.exports = function (robot) {
